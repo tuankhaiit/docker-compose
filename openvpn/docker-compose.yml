@@ -12,8 +12,8 @@ services:
       - PGID=1000
       - TZ=Asia/Saigon
       - INTERFACE=eth0
-    #volumes:
-    #  - ./config:/config
+        #volumes:
+        #- ./config:/config
     ports:
       - 811:943
       - 9443:9443

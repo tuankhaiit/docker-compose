@@ -1,2 +1,2 @@
 FROM linuxserver/openvpn-as
-RUN echo "admin:@{ADMIN_PASSWORD}" | chpasswd
+RUN echo 'admin:Aa@123456' | chpasswd
