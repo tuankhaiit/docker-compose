@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create swap
-dd if=/dev/zero of=/swapfile bs=1024 count=2048k
+dd if=/dev/zero of=/swapfile bs=1024 count=4096k
 
 # Create volume
 mkswap /swapfile

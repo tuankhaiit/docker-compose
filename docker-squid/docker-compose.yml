@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  squid:
+    image: sameersbn/squid:3.5.27-2
+    container_name: squid_container
+    ports:
+      - "2222:3128"
+    volumes:
+      - "/srv/docker/squid/cache:/var/spool/squid"
+      - "/home/user/docker-compose/config/squid/squid.conf:/etc/squid/squid.conf"
+    restart: always
